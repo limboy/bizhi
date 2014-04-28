@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A1D3949190E71DE00F1EA81 /* BZTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D3948190E71DE00F1EA81 /* BZTagModel.m */; };
 		6A33AC14190E555D007A121D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A33AC13190E555D007A121D /* Foundation.framework */; };
 		6A33AC16190E555D007A121D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A33AC15190E555D007A121D /* CoreGraphics.framework */; };
 		6A33AC18190E555D007A121D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A33AC17190E555D007A121D /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A1D3947190E71DE00F1EA81 /* BZTagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZTagModel.h; sourceTree = "<group>"; };
+		6A1D3948190E71DE00F1EA81 /* BZTagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZTagModel.m; sourceTree = "<group>"; };
 		6A33AC10190E555D007A121D /* bizhi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bizhi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A33AC13190E555D007A121D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6A33AC15190E555D007A121D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -172,6 +175,8 @@
 			children = (
 				6A33AC44190E5899007A121D /* BZPinModel.h */,
 				6A33AC45190E5899007A121D /* BZPinModel.m */,
+				6A1D3947190E71DE00F1EA81 /* BZTagModel.h */,
+				6A1D3948190E71DE00F1EA81 /* BZTagModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A1D3949190E71DE00F1EA81 /* BZTagModel.m in Sources */,
 				6A33AC24190E555D007A121D /* BZAppDelegate.m in Sources */,
 				6A33AC20190E555D007A121D /* main.m in Sources */,
 				6A33AC49190E5B29007A121D /* BZAPIManager.m in Sources */,

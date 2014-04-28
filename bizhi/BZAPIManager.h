@@ -17,4 +17,6 @@
 
 - (RACSignal *)fetchPinsWithOffset:(NSInteger)offset limit:(NSInteger)limit;
 
+- (RACSignal *)fetchTags;
+
 @end

@@ -9,6 +9,7 @@
 #import "BZAPIManager.h"
 #import <ReactiveCocoa.h>
 #import <AFNetworking-RACExtensions/AFHTTPRequestOperationManager+RACSupport.h>
+#import "BZTagModel.h"
 #import "BZPinModel.h"
 
 @implementation BZAPIManager
@@ -28,11 +29,18 @@
     NSString *max = offset ? [NSString stringWithFormat:@"max=%d", offset] : @"";
     NSString *urlString = [NSString stringWithFormat:@"http://api.huaban.com/fm/wallpaper/pins?limit=%d&%@", limit, max];
     return [[self rac_GET:urlString parameters:nil] map:^id(NSDictionary *data) {
-        NSMutableArray *pins = [[NSMutableArray alloc] init];
-        [data[@"pins"] enumerateObjectsUsingBlock:^(NSDictionary *pin, NSUInteger idx, BOOL *stop) {
-            [pins addObject:[[BZPinModel alloc] initWithDictionary:pin error:nil]];
+        return [((NSArray *)data[@"pins"]).rac_sequence map:^id(id value) {
+            return [[BZPinModel alloc] initWithDictionary:value error:nil];
         }];
-        return pins;
+    }];
+}
+
+- (RACSignal *)fetchTags
+{
+    return [[self rac_GET:@"http://api.huaban.com/fm/wallpaper/tags" parameters:nil] map:^id(NSArray *tags) {
+        return [tags.rac_sequence map:^id(id value) {
+            return [[BZTagModel alloc] initWithDictionary:value error:nil];
+        }];
     }];
 }
 
