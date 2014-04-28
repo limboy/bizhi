@@ -19,6 +19,8 @@
 		6A33AC2F190E555D007A121D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A33AC17190E555D007A121D /* UIKit.framework */; };
 		6A33AC37190E555D007A121D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A33AC35190E555D007A121D /* InfoPlist.strings */; };
 		6A33AC39190E555D007A121D /* bizhiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AC38190E555D007A121D /* bizhiTests.m */; };
+		6A33AC46190E5899007A121D /* BZPinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AC45190E5899007A121D /* BZPinModel.m */; };
+		6A33AC49190E5B29007A121D /* BZAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AC48190E5B29007A121D /* BZAPIManager.m */; };
 		F0F70AFBB7FF42679A7237C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D08661F7C4427985F32208 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,10 @@
 		6A33AC34190E555D007A121D /* bizhiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bizhiTests-Info.plist"; sourceTree = "<group>"; };
 		6A33AC36190E555D007A121D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A33AC38190E555D007A121D /* bizhiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bizhiTests.m; sourceTree = "<group>"; };
+		6A33AC44190E5899007A121D /* BZPinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZPinModel.h; sourceTree = "<group>"; };
+		6A33AC45190E5899007A121D /* BZPinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZPinModel.m; sourceTree = "<group>"; };
+		6A33AC47190E5B29007A121D /* BZAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZAPIManager.h; sourceTree = "<group>"; };
+		6A33AC48190E5B29007A121D /* BZAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZAPIManager.m; sourceTree = "<group>"; };
 		75D3CBF081EE48F1B6839A84 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A0D08661F7C4427985F32208 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,6 +119,7 @@
 		6A33AC19190E555D007A121D /* bizhi */ = {
 			isa = PBXGroup;
 			children = (
+				6A33AC42190E57D2007A121D /* API */,
 				6A33AC22190E555D007A121D /* BZAppDelegate.h */,
 				6A33AC23190E555D007A121D /* BZAppDelegate.m */,
 				6A33AC25190E555D007A121D /* Images.xcassets */,
@@ -148,6 +155,25 @@
 				6A33AC35190E555D007A121D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A33AC42190E57D2007A121D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6A33AC43190E57D7007A121D /* Models */,
+				6A33AC47190E5B29007A121D /* BZAPIManager.h */,
+				6A33AC48190E5B29007A121D /* BZAPIManager.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		6A33AC43190E57D7007A121D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6A33AC44190E5899007A121D /* BZPinModel.h */,
+				6A33AC45190E5899007A121D /* BZPinModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +309,8 @@
 			files = (
 				6A33AC24190E555D007A121D /* BZAppDelegate.m in Sources */,
 				6A33AC20190E555D007A121D /* main.m in Sources */,
+				6A33AC49190E5B29007A121D /* BZAPIManager.m in Sources */,
+				6A33AC46190E5899007A121D /* BZPinModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
