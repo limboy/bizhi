@@ -1,6 +1,6 @@
 ### Introduction
 
-A simple Wallpaper App to demonstrate the use of [ReactiveCocoa2](https://github.com/ReactiveCocoa/ReactiveCocoa) [MVVM](https://github.com/ReactiveCocoa/ReactiveViewModel) and [objection](https://github.com/atomicobject/objection)
+A simple Wallpaper App to demonstrate the use of [ReactiveCocoa2](https://github.com/ReactiveCocoa/ReactiveCocoa), [MVVM](https://github.com/ReactiveCocoa/ReactiveViewModel) and [objection](https://github.com/atomicobject/objection)
 
 ### ScreenShots
 
