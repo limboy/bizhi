@@ -8,6 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		6A1D3949190E71DE00F1EA81 /* BZTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D3948190E71DE00F1EA81 /* BZTagModel.m */; };
+		6A1D3952190E73C600F1EA81 /* UICollectionView+FixRefreshControlJump.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D394F190E73C600F1EA81 /* UICollectionView+FixRefreshControlJump.m */; };
+		6A1D3953190E73C600F1EA81 /* UIColor+LightRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D3951190E73C600F1EA81 /* UIColor+LightRandom.m */; };
+		6A1D3959190E73F400F1EA81 /* BZSettingsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D3956190E73F400F1EA81 /* BZSettingsModule.m */; };
+		6A1D395A190E73F400F1EA81 /* BZSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D3958190E73F400F1EA81 /* BZSettingsViewController.m */; };
+		6A1D3963190E742800F1EA81 /* BZTagsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D3960190E742800F1EA81 /* BZTagsModule.m */; };
+		6A1D3964190E742800F1EA81 /* BZTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D3962190E742800F1EA81 /* BZTagsViewController.m */; };
+		6A1D396B190E743A00F1EA81 /* BZDetailModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D3966190E743A00F1EA81 /* BZDetailModule.m */; };
+		6A1D396C190E743A00F1EA81 /* BZDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D3968190E743A00F1EA81 /* BZDetailViewCell.m */; };
+		6A1D396D190E743A00F1EA81 /* BZDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D396A190E743A00F1EA81 /* BZDetailViewController.m */; };
+		6A1D3978190E744500F1EA81 /* BZWaterfallModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D396F190E744500F1EA81 /* BZWaterfallModule.m */; };
+		6A1D3979190E744500F1EA81 /* BZWaterfallViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D3971190E744500F1EA81 /* BZWaterfallViewCell.m */; };
+		6A1D397A190E744500F1EA81 /* BZWaterfallViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D3973190E744500F1EA81 /* BZWaterfallViewCellModel.m */; };
+		6A1D397B190E744500F1EA81 /* BZWaterfallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D3975190E744500F1EA81 /* BZWaterfallViewController.m */; };
+		6A1D397C190E744500F1EA81 /* BZWaterfallViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D3977190E744500F1EA81 /* BZWaterfallViewModel.m */; };
+		6A1D397F190E792800F1EA81 /* UIView+SuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D397E190E792800F1EA81 /* UIView+SuperView.m */; };
+		6A1D3982190E797E00F1EA81 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D3981190E797E00F1EA81 /* UIView+Layout.m */; };
 		6A33AC14190E555D007A121D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A33AC13190E555D007A121D /* Foundation.framework */; };
 		6A33AC16190E555D007A121D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A33AC15190E555D007A121D /* CoreGraphics.framework */; };
 		6A33AC18190E555D007A121D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A33AC17190E555D007A121D /* UIKit.framework */; };
@@ -38,6 +54,40 @@
 /* Begin PBXFileReference section */
 		6A1D3947190E71DE00F1EA81 /* BZTagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZTagModel.h; sourceTree = "<group>"; };
 		6A1D3948190E71DE00F1EA81 /* BZTagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZTagModel.m; sourceTree = "<group>"; };
+		6A1D394E190E73C600F1EA81 /* UICollectionView+FixRefreshControlJump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+FixRefreshControlJump.h"; sourceTree = "<group>"; };
+		6A1D394F190E73C600F1EA81 /* UICollectionView+FixRefreshControlJump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+FixRefreshControlJump.m"; sourceTree = "<group>"; };
+		6A1D3950190E73C600F1EA81 /* UIColor+LightRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LightRandom.h"; sourceTree = "<group>"; };
+		6A1D3951190E73C600F1EA81 /* UIColor+LightRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LightRandom.m"; sourceTree = "<group>"; };
+		6A1D3954190E73DE00F1EA81 /* Protocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Protocols.h; sourceTree = "<group>"; };
+		6A1D3955190E73F400F1EA81 /* BZSettingsModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZSettingsModule.h; sourceTree = "<group>"; };
+		6A1D3956190E73F400F1EA81 /* BZSettingsModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZSettingsModule.m; sourceTree = "<group>"; };
+		6A1D3957190E73F400F1EA81 /* BZSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZSettingsViewController.h; sourceTree = "<group>"; };
+		6A1D3958190E73F400F1EA81 /* BZSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZSettingsViewController.m; sourceTree = "<group>"; };
+		6A1D395F190E742800F1EA81 /* BZTagsModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZTagsModule.h; sourceTree = "<group>"; };
+		6A1D3960190E742800F1EA81 /* BZTagsModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZTagsModule.m; sourceTree = "<group>"; };
+		6A1D3961190E742800F1EA81 /* BZTagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZTagsViewController.h; sourceTree = "<group>"; };
+		6A1D3962190E742800F1EA81 /* BZTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZTagsViewController.m; sourceTree = "<group>"; };
+		6A1D3965190E743A00F1EA81 /* BZDetailModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZDetailModule.h; sourceTree = "<group>"; };
+		6A1D3966190E743A00F1EA81 /* BZDetailModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZDetailModule.m; sourceTree = "<group>"; };
+		6A1D3967190E743A00F1EA81 /* BZDetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZDetailViewCell.h; sourceTree = "<group>"; };
+		6A1D3968190E743A00F1EA81 /* BZDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZDetailViewCell.m; sourceTree = "<group>"; };
+		6A1D3969190E743A00F1EA81 /* BZDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZDetailViewController.h; sourceTree = "<group>"; };
+		6A1D396A190E743A00F1EA81 /* BZDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZDetailViewController.m; sourceTree = "<group>"; };
+		6A1D396E190E744500F1EA81 /* BZWaterfallModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZWaterfallModule.h; sourceTree = "<group>"; };
+		6A1D396F190E744500F1EA81 /* BZWaterfallModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZWaterfallModule.m; sourceTree = "<group>"; };
+		6A1D3970190E744500F1EA81 /* BZWaterfallViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZWaterfallViewCell.h; sourceTree = "<group>"; };
+		6A1D3971190E744500F1EA81 /* BZWaterfallViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZWaterfallViewCell.m; sourceTree = "<group>"; };
+		6A1D3972190E744500F1EA81 /* BZWaterfallViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZWaterfallViewCellModel.h; sourceTree = "<group>"; };
+		6A1D3973190E744500F1EA81 /* BZWaterfallViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZWaterfallViewCellModel.m; sourceTree = "<group>"; };
+		6A1D3974190E744500F1EA81 /* BZWaterfallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZWaterfallViewController.h; sourceTree = "<group>"; };
+		6A1D3975190E744500F1EA81 /* BZWaterfallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZWaterfallViewController.m; sourceTree = "<group>"; };
+		6A1D3976190E744500F1EA81 /* BZWaterfallViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZWaterfallViewModel.h; sourceTree = "<group>"; };
+		6A1D3977190E744500F1EA81 /* BZWaterfallViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZWaterfallViewModel.m; sourceTree = "<group>"; };
+		6A1D397D190E792800F1EA81 /* UIView+SuperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SuperView.h"; sourceTree = "<group>"; };
+		6A1D397E190E792800F1EA81 /* UIView+SuperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SuperView.m"; sourceTree = "<group>"; };
+		6A1D3980190E797E00F1EA81 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		6A1D3981190E797E00F1EA81 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		6A1D3983190E79B800F1EA81 /* UtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		6A33AC10190E555D007A121D /* bizhi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bizhi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A33AC13190E555D007A121D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6A33AC15190E555D007A121D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,6 +137,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A1D394B190E738000F1EA81 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6A1D395E190E741700F1EA81 /* Detail */,
+				6A1D395D190E740F00F1EA81 /* Waterfall */,
+				6A1D395C190E73FF00F1EA81 /* Tags */,
+				6A1D395B190E73F600F1EA81 /* Settings */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		6A1D394C190E738900F1EA81 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6A1D3954190E73DE00F1EA81 /* Protocols.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		6A1D394D190E739800F1EA81 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6A1D397D190E792800F1EA81 /* UIView+SuperView.h */,
+				6A1D397E190E792800F1EA81 /* UIView+SuperView.m */,
+				6A1D394E190E73C600F1EA81 /* UICollectionView+FixRefreshControlJump.h */,
+				6A1D394F190E73C600F1EA81 /* UICollectionView+FixRefreshControlJump.m */,
+				6A1D3950190E73C600F1EA81 /* UIColor+LightRandom.h */,
+				6A1D3951190E73C600F1EA81 /* UIColor+LightRandom.m */,
+				6A1D3980190E797E00F1EA81 /* UIView+Layout.h */,
+				6A1D3981190E797E00F1EA81 /* UIView+Layout.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		6A1D395B190E73F600F1EA81 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6A1D3955190E73F400F1EA81 /* BZSettingsModule.h */,
+				6A1D3956190E73F400F1EA81 /* BZSettingsModule.m */,
+				6A1D3957190E73F400F1EA81 /* BZSettingsViewController.h */,
+				6A1D3958190E73F400F1EA81 /* BZSettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		6A1D395C190E73FF00F1EA81 /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				6A1D395F190E742800F1EA81 /* BZTagsModule.h */,
+				6A1D3960190E742800F1EA81 /* BZTagsModule.m */,
+				6A1D3961190E742800F1EA81 /* BZTagsViewController.h */,
+				6A1D3962190E742800F1EA81 /* BZTagsViewController.m */,
+			);
+			name = Tags;
+			sourceTree = "<group>";
+		};
+		6A1D395D190E740F00F1EA81 /* Waterfall */ = {
+			isa = PBXGroup;
+			children = (
+				6A1D396E190E744500F1EA81 /* BZWaterfallModule.h */,
+				6A1D396F190E744500F1EA81 /* BZWaterfallModule.m */,
+				6A1D3970190E744500F1EA81 /* BZWaterfallViewCell.h */,
+				6A1D3971190E744500F1EA81 /* BZWaterfallViewCell.m */,
+				6A1D3972190E744500F1EA81 /* BZWaterfallViewCellModel.h */,
+				6A1D3973190E744500F1EA81 /* BZWaterfallViewCellModel.m */,
+				6A1D3974190E744500F1EA81 /* BZWaterfallViewController.h */,
+				6A1D3975190E744500F1EA81 /* BZWaterfallViewController.m */,
+				6A1D3976190E744500F1EA81 /* BZWaterfallViewModel.h */,
+				6A1D3977190E744500F1EA81 /* BZWaterfallViewModel.m */,
+			);
+			name = Waterfall;
+			sourceTree = "<group>";
+		};
+		6A1D395E190E741700F1EA81 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6A1D3965190E743A00F1EA81 /* BZDetailModule.h */,
+				6A1D3966190E743A00F1EA81 /* BZDetailModule.m */,
+				6A1D3967190E743A00F1EA81 /* BZDetailViewCell.h */,
+				6A1D3968190E743A00F1EA81 /* BZDetailViewCell.m */,
+				6A1D3969190E743A00F1EA81 /* BZDetailViewController.h */,
+				6A1D396A190E743A00F1EA81 /* BZDetailViewController.m */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
 		6A33AC07190E555D007A121D = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +258,10 @@
 		6A33AC19190E555D007A121D /* bizhi */ = {
 			isa = PBXGroup;
 			children = (
+				6A1D3983190E79B800F1EA81 /* UtilsMacro.h */,
+				6A1D394D190E739800F1EA81 /* Categories */,
+				6A1D394C190E738900F1EA81 /* Protocols */,
+				6A1D394B190E738000F1EA81 /* Modules */,
 				6A33AC42190E57D2007A121D /* API */,
 				6A33AC22190E555D007A121D /* BZAppDelegate.h */,
 				6A33AC23190E555D007A121D /* BZAppDelegate.m */,
@@ -312,11 +452,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A1D396B190E743A00F1EA81 /* BZDetailModule.m in Sources */,
+				6A1D3963190E742800F1EA81 /* BZTagsModule.m in Sources */,
+				6A1D395A190E73F400F1EA81 /* BZSettingsViewController.m in Sources */,
+				6A1D397F190E792800F1EA81 /* UIView+SuperView.m in Sources */,
+				6A1D396C190E743A00F1EA81 /* BZDetailViewCell.m in Sources */,
+				6A1D3959190E73F400F1EA81 /* BZSettingsModule.m in Sources */,
+				6A1D397C190E744500F1EA81 /* BZWaterfallViewModel.m in Sources */,
 				6A1D3949190E71DE00F1EA81 /* BZTagModel.m in Sources */,
 				6A33AC24190E555D007A121D /* BZAppDelegate.m in Sources */,
+				6A1D3964190E742800F1EA81 /* BZTagsViewController.m in Sources */,
+				6A1D3952190E73C600F1EA81 /* UICollectionView+FixRefreshControlJump.m in Sources */,
+				6A1D3982190E797E00F1EA81 /* UIView+Layout.m in Sources */,
+				6A1D397B190E744500F1EA81 /* BZWaterfallViewController.m in Sources */,
+				6A1D397A190E744500F1EA81 /* BZWaterfallViewCellModel.m in Sources */,
+				6A1D3979190E744500F1EA81 /* BZWaterfallViewCell.m in Sources */,
+				6A1D3978190E744500F1EA81 /* BZWaterfallModule.m in Sources */,
+				6A1D396D190E743A00F1EA81 /* BZDetailViewController.m in Sources */,
 				6A33AC20190E555D007A121D /* main.m in Sources */,
 				6A33AC49190E5B29007A121D /* BZAPIManager.m in Sources */,
 				6A33AC46190E5899007A121D /* BZPinModel.m in Sources */,
+				6A1D3953190E73C600F1EA81 /* UIColor+LightRandom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +593,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bizhi/bizhi-Prefix.pch";
 				INFOPLIST_FILE = "bizhi/bizhi-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -451,6 +608,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bizhi/bizhi-Prefix.pch";
 				INFOPLIST_FILE = "bizhi/bizhi-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

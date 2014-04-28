@@ -10,5 +10,5 @@
 
 @interface BZTagModel : JSONModel
 @property (nonatomic, copy) NSString *tagName;
-@property (nonatomic, assign) NSInteger tagCount;
+@property (nonatomic, assign) NSInteger pinCount;
 @end

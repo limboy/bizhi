@@ -15,7 +15,7 @@
 
 + (instancetype)sharedManager;
 
-- (RACSignal *)fetchPinsWithOffset:(NSInteger)offset limit:(NSInteger)limit;
+- (RACSignal *)fetchPinsWithTag:(NSString *)tag offset:(NSInteger)offset limit:(NSInteger)limit;
 
 - (RACSignal *)fetchTags;
 

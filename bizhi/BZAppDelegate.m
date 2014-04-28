@@ -7,6 +7,8 @@
 //
 
 #import "BZAppDelegate.h"
+#import "Protocols.h"
+#import <Objection.h>
 
 @implementation BZAppDelegate
 
@@ -16,8 +18,35 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    [self setupRootViewController];
     return YES;
 }
+
+- (void)setupRootViewController
+{
+    UITabBarController *tabViewController = [[UITabBarController alloc] init];
+    
+    UIViewController <BZWaterfallViewControllerProtocol> *waterfallViewController = [[JSObjection defaultInjector] getObject:@protocol(BZWaterfallViewControllerProtocol)];
+    [waterfallViewController configureWithLatest];
+    UINavigationController *waterfallNavigationController = [[UINavigationController alloc] initWithRootViewController:waterfallViewController];
+    waterfallViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"最新" image:[UIImage imageNamed:@"latest"] tag:0];
+    waterfallViewController.title = @"最新";
+    
+    UIViewController <BZTagsViewControllerProtocol> *tagsViewController = [[JSObjection defaultInjector] getObject:@protocol(BZTagsViewControllerProtocol)];
+    UINavigationController *tagsNavigationController = [[UINavigationController alloc] initWithRootViewController:tagsViewController];
+    tagsViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"分类" image:[UIImage imageNamed:@"categories"] tag:1];
+    tagsViewController.title = @"分类";
+    
+    UIViewController <BZSettingsViewControllerProtocol> *settingsViewController = [[JSObjection defaultInjector] getObject:@protocol(BZSettingsViewControllerProtocol)];
+    settingsViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"设置" image:[UIImage imageNamed:@"settings"] tag:2];
+    UINavigationController *settingsNavigationController = [[UINavigationController alloc] initWithRootViewController:settingsViewController];
+    settingsViewController.title = @"设置";
+    
+    tabViewController.viewControllers = @[waterfallNavigationController, tagsNavigationController, settingsNavigationController];
+    self.window.rootViewController = tabViewController;
+}
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

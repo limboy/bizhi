@@ -11,6 +11,7 @@
 @interface BZPinModel : JSONModel
 @property (nonatomic, assign) NSInteger pinId;
 @property (nonatomic, copy) NSString *key;
+@property (nonatomic, assign) NSInteger seq;
 
 - (NSString *)imageURLWithThumbnailWidth:(NSInteger)width;
 @end
