@@ -19,6 +19,7 @@
 		6A33AC2F190E555D007A121D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A33AC17190E555D007A121D /* UIKit.framework */; };
 		6A33AC37190E555D007A121D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A33AC35190E555D007A121D /* InfoPlist.strings */; };
 		6A33AC39190E555D007A121D /* bizhiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AC38190E555D007A121D /* bizhiTests.m */; };
+		F0F70AFBB7FF42679A7237C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D08661F7C4427985F32208 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		6A33AC34190E555D007A121D /* bizhiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bizhiTests-Info.plist"; sourceTree = "<group>"; };
 		6A33AC36190E555D007A121D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A33AC38190E555D007A121D /* bizhiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bizhiTests.m; sourceTree = "<group>"; };
+		75D3CBF081EE48F1B6839A84 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A0D08661F7C4427985F32208 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 				6A33AC16190E555D007A121D /* CoreGraphics.framework in Frameworks */,
 				6A33AC18190E555D007A121D /* UIKit.framework in Frameworks */,
 				6A33AC14190E555D007A121D /* Foundation.framework in Frameworks */,
+				F0F70AFBB7FF42679A7237C3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +85,7 @@
 				6A33AC32190E555D007A121D /* bizhiTests */,
 				6A33AC12190E555D007A121D /* Frameworks */,
 				6A33AC11190E555D007A121D /* Products */,
+				75D3CBF081EE48F1B6839A84 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +105,7 @@
 				6A33AC15190E555D007A121D /* CoreGraphics.framework */,
 				6A33AC17190E555D007A121D /* UIKit.framework */,
 				6A33AC2C190E555D007A121D /* XCTest.framework */,
+				A0D08661F7C4427985F32208 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A33AC3C190E555D007A121D /* Build configuration list for PBXNativeTarget "bizhi" */;
 			buildPhases = (
+				FA80234022C5483395D76428 /* Check Pods Manifest.lock */,
 				6A33AC0C190E555D007A121D /* Sources */,
 				6A33AC0D190E555D007A121D /* Frameworks */,
 				6A33AC0E190E555D007A121D /* Resources */,
+				409B7E4B17BC4FA294A5F3C3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +242,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		409B7E4B17BC4FA294A5F3C3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA80234022C5483395D76428 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A33AC0C190E555D007A121D /* Sources */ = {
@@ -355,6 +396,7 @@
 		};
 		6A33AC3D190E555D007A121D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D3CBF081EE48F1B6839A84 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -368,6 +410,7 @@
 		};
 		6A33AC3E190E555D007A121D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D3CBF081EE48F1B6839A84 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -438,6 +481,7 @@
 				6A33AC3E190E555D007A121D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A33AC3F190E555D007A121D /* Build configuration list for PBXNativeTarget "bizhiTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +490,7 @@
 				6A33AC41190E555D007A121D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
