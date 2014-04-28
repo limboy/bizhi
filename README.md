@@ -4,7 +4,7 @@ A simple Wallpaper App to demonstrate the use of [ReactiveCocoa2](https://github
 
 ### ScreenShots
 
-![Screenshot](https://raw.githubusercontent.com/lzyy/bizhi/master/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/lzyy/bizhi/master/screenshot.jpg)
 
 ### Install
 
