@@ -26,9 +26,9 @@
 
 - (RACSignal *)fetchPinsWithTag:(NSString *)tag offset:(NSInteger)offset limit:(NSInteger)limit
 {
-    NSString *max = offset ? [NSString stringWithFormat:@"&max=%d", offset] : @"";
+    NSString *max = offset ? [NSString stringWithFormat:@"&max=%ld", (long)offset] : @"";
     tag = tag ? [NSString stringWithFormat:@"&tag=%@", [tag stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] : @"";
-    NSString *urlString = [NSString stringWithFormat:@"http://api.huaban.com/fm/wallpaper/pins?limit=%d%@%@", limit, max, tag];
+    NSString *urlString = [NSString stringWithFormat:@"http://api.huaban.com/fm/wallpaper/pins?limit=%ld%@%@", (long)limit, max, tag];
     return [self fetchPinsWithURL:urlString];
 }
 

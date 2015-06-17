@@ -88,7 +88,7 @@ static NSString *cellIdentifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     BZTagModel *tag = ((BZTagModel *)self.tags[indexPath.row]);
     NSString *tagName = tag.tagName;
-    NSString *pinCountString = [NSString stringWithFormat:@"%d", tag.pinCount];
+    NSString *pinCountString = [NSString stringWithFormat:@"%ld", (long)tag.pinCount];
     NSString *displayString = [NSString stringWithFormat:@"%@ 共%@张", tagName, pinCountString];
     
     // Configure the cell...

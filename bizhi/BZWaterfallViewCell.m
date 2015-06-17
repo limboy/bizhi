@@ -42,7 +42,7 @@
     self.backgroundColor = [UIColor lightRandom];
     NSURL *imageURL = [NSURL URLWithString:[viewModel.pin imageURLWithThumbnailWidth:236]];
     @weakify(self);
-    [self.thumbnailImageView setImageWithURL:imageURL placeholderImage:nil options:SDWebImageRetryFailed completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+    [self.thumbnailImageView sd_setImageWithURL:imageURL placeholderImage:nil options:SDWebImageRetryFailed completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         @strongify(self);
         if (cacheType != SDImageCacheTypeMemory) {
             self.thumbnailImageView.alpha = 0;

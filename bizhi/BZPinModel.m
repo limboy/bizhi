@@ -20,7 +20,7 @@
 
 - (NSString *)imageURLWithThumbnailWidth:(NSInteger)width
 {
-    return [NSString stringWithFormat:@"http://img.hb.aicdn.com/%@_fw%d", self.key, width];
+    return [NSString stringWithFormat:@"http://img.hb.aicdn.com/%@_fw%ld", self.key, (long)width];
 }
 
 @end

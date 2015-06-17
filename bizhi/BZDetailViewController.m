@@ -238,9 +238,10 @@ static NSString *cellIdentifier = @"cell";
                 if (![[SDWebImageManager sharedManager] diskImageExistsForURL:[NSURL URLWithString:URLString]]) {
                     [SVProgressHUD showWithStatus:@"" maskType:SVProgressHUDMaskTypeBlack];
                 }
-                [[SDWebImageManager sharedManager] downloadWithURL:[NSURL URLWithString:URLString] options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-                    
-                } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished) {
+                [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:URLString]
+                                                                options:SDWebImageRetryFailed
+                                                               progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+                } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
                     [SVProgressHUD dismiss];
                     [subscriber sendCompleted];
                     if (!error) {
