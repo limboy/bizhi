@@ -53,10 +53,10 @@
     self.contentView.backgroundColor = [UIColor lightRandom];
     NSURL *imageURL = [NSURL URLWithString:[pin imageURLWithThumbnailWidth:658]];
     self.progressView.hidden = NO;
-    [self.detailImageView setImageWithURL:imageURL placeholderImage:nil options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+    [self.detailImageView sd_setImageWithURL:imageURL placeholderImage:nil options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize) {
         @strongify(self);
         [self.progressView setProgress:receivedSize / (float)expectedSize];
-    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         @strongify(self);
         self.progressView.hidden = YES;
         NSInteger finalImageHeight = ScreenWidth / image.size.width * image.size.height;
